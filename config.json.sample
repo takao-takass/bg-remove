@@ -1,0 +1,4 @@
+{
+    "endpoint": "https://[YOUR_SERVICE_NAME].cognitiveservices.azure.com/",
+    "key": "[YOUR_SERVICE_KEY]"
+}
