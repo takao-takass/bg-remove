@@ -7,6 +7,9 @@
 - Azure Computer Visionのインスタンスをデプロイしていること。
     - 2023年12月現在、背景削除機能はPreviewバージョンであり、日本リージョンでは利用できないのでご注意ください。
     - 利用可能のリージョンは、Microsoftのドキュメントを参照してください。
+- Mojoの開発環境を整えていること
+    - See document:https://developer.modular.com/download
+
 ## 使い方
 1. 設定ファイルの用意
     - config.json.sampleをコピーしてconfig.jsonを作成します。
