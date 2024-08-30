@@ -1,13 +1,33 @@
+"""
+This script removes the background from images using the Azure AI Vision SDK.
+"""
 import json
 import os
 import azure.ai.vision as sdk
 
 def configure():
+    """
+    Reads the configuration from a JSON file named 'config.json' located in the same directory.
+    
+    Returns:
+        dict: The configuration settings loaded from the JSON file.
+    """
     with open('config.json', 'r', encoding='utf-8') as f:
-        config = json.load(f)
-    return config
+        config_data = json.load(f)
+    return config_data
 
 def remove_background(options, source):
+    """
+    Removes the background from an image using Azure AI Vision SDK and saves
+    the result as a PNG file.
+    
+    Args:
+        options (sdk.ImageAnalysisOptions): The options for image analysis.
+        source (str): The file path of the source image.
+    
+    Returns:
+        None
+    """
 
     output_image_file = f"./output/{os.path.basename(source)}.png"
 
